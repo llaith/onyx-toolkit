@@ -51,7 +51,7 @@
             <!-- project deps -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>onyx-toolkit-common</artifactId>
+                <artifactId>onyx-toolkit-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -61,7 +61,7 @@
             </dependency>
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>onyx-toolkit-support</artifactId>
+                <artifactId>onyx-toolkit-support-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>

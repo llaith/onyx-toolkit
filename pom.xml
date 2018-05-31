@@ -21,7 +21,7 @@
 
     <modules>
         <module>onyx-toolkit-bom</module>
-        <module>onyx-toolkit-common</module>
+        <module>onyx-toolkit-core</module>
         <module>onyx-toolkit-support</module>
     </modules>
 
