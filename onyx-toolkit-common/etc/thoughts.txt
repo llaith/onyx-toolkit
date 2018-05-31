@@ -1,0 +1,23 @@
+Simple Types
+~~~~~~~~~~
+Integer (toByte, toInteger, toLong, toBigInteger)
+Decimal (toFLoat, toDouble, toBigDecimal)
+Boolean (toBoolean)
+String (toString, toCharacter)
+
+Compound Types
+~~~~~~~~~~~~~~
+Date (integer+timezone)
+Currency (decimal+currency)
+Reference (integer+tablename)
+
+Collection Types
+~~~~~~~~~~~~~
+Set (toList, toSet) (Typed)
+Map (toMap) (Typed)
+Struct (toObject) - could this not be a tagged tuple? positions or names important?
+
+We need a compound, when we can’t allow computation on instances outside of the domain type. So for example, although we could invest a generic tuple and use for money (decimal+string), date (integer + string), and even reference (integer + string tablename)  it would be a bad idea because adding numbers ti the money should take into account conversion, and adding amounts to the date should take into account business days and other such things, and adding to refs is nonsensical.
+
+
+

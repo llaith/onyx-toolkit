@@ -40,6 +40,7 @@
         <commons-io.version>2.5</commons-io.version>
         <bouncy-castle.version>1.53</bouncy-castle.version>
         <picocli.version>0.9.8</picocli.version>
+        <mbassador.version>1.2.0</mbassador.version>
 
     </properties>
 
@@ -191,6 +192,11 @@
                 <groupId>com.univocity</groupId>
                 <artifactId>univocity-parsers</artifactId>
                 <version>${univocity.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>net.engio</groupId>
+                <artifactId>mbassador</artifactId>
+                <version>${mbassador.version}</version>
             </dependency>
 
             <dependency>

@@ -23,12 +23,19 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    
+
     <dependencies>
         <!-- project deps -->
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>onyx-toolkit-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>onyx-toolkit-common</artifactId>
+            <version>${project.version}</version>
+            <type>test-jar</type>
+            <scope>test</scope>
         </dependency>
         <!-- core deps -->
         <dependency>
@@ -128,12 +135,35 @@
             <artifactId>rxjava</artifactId>
             <optional>true</optional>
         </dependency>
+        <dependency>
+            <groupId>net.engio</groupId>
+            <artifactId>mbassador</artifactId>
+            <optional>true</optional>
+        </dependency>
         <!-- NOTE: compile only -->
         <dependency>
             <groupId>org.immutables</groupId>
             <artifactId>value</artifactId>
             <scope>provided</scope>
         </dependency>
+
+        <!-- logging deps -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-all</artifactId>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
-    
+
 </project>

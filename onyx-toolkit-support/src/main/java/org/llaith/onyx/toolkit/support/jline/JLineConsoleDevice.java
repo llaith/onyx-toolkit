@@ -21,17 +21,17 @@ import java.io.Reader;
  *
  * @author McDowell
  */
-public class JLineDevice implements TextDevice {
+public class JLineConsoleDevice implements TextDevice {
 
     private final ConsoleReader console;
     private final PrintWriter out;
     private final Reader in;
 
-    public JLineDevice() {
+    public JLineConsoleDevice() {
         this(ExceptionUtil.rethrowOrReturn(ConsoleReader::new));
     }
 
-    public JLineDevice(final ConsoleReader console) {
+    public JLineConsoleDevice(final ConsoleReader console) {
         this.console = console;
         this.out = new PrintWriter(console.getOutput());
         this.in = new InputStreamReader(console.getInput());

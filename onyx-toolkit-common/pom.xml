@@ -26,12 +26,6 @@
 
     <dependencies>
 
-        <!-- project deps -->
-        <dependency>
-            <groupId>org.llaith.onyx-toolkit</groupId>
-            <artifactId>onyx-toolkit-util</artifactId>
-        </dependency>
-        
         <!-- core deps -->
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -57,6 +51,14 @@
             <groupId>org.zeroturnaround</groupId>
             <artifactId>zt-exec</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>net.vidageek</groupId>
+            <artifactId>mirror</artifactId>
         </dependency>
 
         <!-- logging deps -->
