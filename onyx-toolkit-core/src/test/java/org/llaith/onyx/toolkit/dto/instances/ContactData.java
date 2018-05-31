@@ -6,7 +6,6 @@ package org.llaith.onyx.toolkit.dto.instances;
 
 
 
-import org.llaith.onyx.toolkit.util.reflection.PojoModel;
 import org.llaith.onyx.toolkit.util.reflection.PojoModel.Identity;
 import org.llaith.onyx.toolkit.util.reflection.PojoModel.Immutable;
 import org.llaith.onyx.toolkit.util.reflection.PojoModel.NestedModel;

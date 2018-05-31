@@ -5,7 +5,6 @@
 package org.llaith.onyx.toolkit.util.exception;
 
 import net.vidageek.mirror.dsl.Mirror;
-import org.llaith.onyx.toolkit.util.exception.ExceptionUtil;
 
 /**
  * NOTE: it's unlikely we want to keep this class. It's excessively complex now we have lambdas!
