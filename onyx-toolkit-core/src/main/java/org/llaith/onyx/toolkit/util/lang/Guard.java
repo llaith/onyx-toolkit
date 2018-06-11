@@ -46,6 +46,19 @@ public class Guard {
 
     }
 
+    public static void noneNull(@Nullable final Object[] oa) {
+
+        if (oa == null) throw new IllegalArgumentException("Value cannot be null.");
+
+        for (int i = 0; i < oa.length; i++) {
+
+            if (oa[i] == null) throw new IllegalArgumentException(
+                    String.format("Value at index %s cannot be null.", i));
+
+        }
+
+    }
+
     @Nullable
     public static String blankToNull(@Nullable final String s) {
         if (StringUtil.isBlankOrNull(s)) return null;
