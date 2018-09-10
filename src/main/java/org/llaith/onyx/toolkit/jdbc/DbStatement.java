@@ -1,4 +1,4 @@
-package org.llaith.onyx.toolkit.data;
+package org.llaith.onyx.toolkit.jdbc;
 
 import java.io.InputStream;
 import java.io.Reader;

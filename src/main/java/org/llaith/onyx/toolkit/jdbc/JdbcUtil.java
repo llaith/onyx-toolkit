@@ -2,7 +2,7 @@
  * Copyright (c) 2016.
  */
 
-package org.llaith.onyx.toolkit.data;
+package org.llaith.onyx.toolkit.jdbc;
 
 import java.sql.SQLException;
 import java.util.Arrays;
