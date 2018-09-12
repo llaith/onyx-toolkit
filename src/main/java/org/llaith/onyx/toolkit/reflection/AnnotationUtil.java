@@ -223,4 +223,24 @@ public class AnnotationUtil {
 
     }
 
+    public static <T extends Annotation> T searchForClassAnnotation(Class<?> klass, Class<T> annotationType) {
+
+        // should not be needed often as @Inherited is for this purpose normally.
+        Class<?> srch = klass;
+
+        while (srch != null) {
+
+            final T result = srch.getAnnotation(annotationType);
+
+            if (result != null) return result;
+
+            srch = srch.getSuperclass();
+
+        }
+
+        return null;
+
+    }
+
+
 }

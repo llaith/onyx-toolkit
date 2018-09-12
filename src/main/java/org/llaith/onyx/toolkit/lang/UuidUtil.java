@@ -24,22 +24,22 @@ public class UuidUtil {
 
     }
 
-    public static String squishedUuid(final UUID uuid) {
+    public static String suuid() {
+
+        return suuid(UUID.randomUUID());
+
+    }
+
+    public static String suuid(final UUID uuid) {
 
         return uuid(uuid).replaceAll("-", "");
 
     }
 
-    public static String squishedUuid() {
+    public static UUID suuidToUuid(final String squishedUuid) {
 
-        return squishedUuid(UUID.randomUUID());
-
-    }
-
-    public static UUID unsquishUuid(final String squished) {
-
-        final BigInteger bi1 = new BigInteger(squished.substring(0, 16), 16);
-        final BigInteger bi2 = new BigInteger(squished.substring(16, 32), 16);
+        final BigInteger bi1 = new BigInteger(squishedUuid.substring(0, 16), 16);
+        final BigInteger bi2 = new BigInteger(squishedUuid.substring(16, 32), 16);
 
         return new UUID(bi1.longValue(), bi2.longValue());
 

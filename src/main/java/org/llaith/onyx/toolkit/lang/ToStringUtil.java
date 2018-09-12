@@ -24,7 +24,7 @@ public class ToStringUtil {
     public @interface ToStringIgnore {
     }
 
-    public static String asString(final Object o) {
+    public static String toString(final Object o) {
         // This is just easier and performance doesn't matter
         return (new ReflectionToStringBuilder(o) {
             @Override
@@ -33,6 +33,5 @@ public class ToStringUtil {
             }
         }).toString();
     }
-
 
 }

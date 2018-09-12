@@ -11,4 +11,4 @@
 @Maturity(Maturity.MaturityLevel.RELEASE)
 package org.llaith.onyx.toolkit.pattern.repository;
 
-import org.llaith.onyx.toolkit.etc.Maturity;
+import org.llaith.onyx.toolkit.etc.marker.Maturity;

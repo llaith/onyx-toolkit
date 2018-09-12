@@ -2,7 +2,7 @@
  * Copyright (c) 2016.
  */
 
-package org.llaith.onyx.toolkit.etc;
+package org.llaith.onyx.toolkit.etc.marker;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
