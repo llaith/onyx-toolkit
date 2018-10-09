@@ -48,12 +48,7 @@ public class PojoModel {
     @Target({ElementType.FIELD})
     public @interface Immutable {
 
-    }
-
-    @Retention(RetentionPolicy.RUNTIME)
-    @Target({ElementType.FIELD})
-    public @interface Identity {
-
+        boolean identity() default false;
     }
 
     @Retention(RetentionPolicy.RUNTIME)
@@ -127,8 +122,11 @@ public class PojoModel {
                         field);
 
                 if (field.isAnnotationPresent(Required.class)) this.required.add(field.getName());
-                if (field.isAnnotationPresent(Immutable.class)) this.immutable.add(field.getName());
-                if (field.isAnnotationPresent(Identity.class)) identity.add(field.getName());
+                
+                if (field.isAnnotationPresent(Immutable.class)) {
+                    this.immutable.add(field.getName());
+                    if (field.getAnnotation(Immutable.class).identity()) this.immutable.add(field.getName());
+                }
 
                 // rip nested types
                 if (field.isAnnotationPresent(NestedModel.class)) {
