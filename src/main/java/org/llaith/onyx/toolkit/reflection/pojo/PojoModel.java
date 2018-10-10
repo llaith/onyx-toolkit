@@ -125,7 +125,7 @@ public class PojoModel {
                 
                 if (field.isAnnotationPresent(Immutable.class)) {
                     this.immutable.add(field.getName());
-                    if (field.getAnnotation(Immutable.class).identity()) this.immutable.add(field.getName());
+                    if (field.getAnnotation(Immutable.class).identity()) this.identity.add(field.getName());
                 }
 
                 // rip nested types
